@@ -68,7 +68,7 @@ void hill_climbing(vector<vector<int>> start) {
 
         for (auto &n : neighbors) {
             int h = misplaced_tiles(n);
-            if (h < best_h) {  // strictly better
+            if (h < best_h) {  
                 best_h = h;
                 best_neighbor = n;
             }
